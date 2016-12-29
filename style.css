@@ -1,7 +1,7 @@
 body {
   font-family: 'Arvo', serif;
-    font-weight: 400;
-  max-width: 423px;
+  font-weight: 400;
+  width: 600px;
   margin: 5% auto;
   background: #EDF2F6;
   color: #494953;
@@ -95,4 +95,64 @@ input:hover{
   font-weight: 400;
   font-style: italic;
   font-size: 9px;
+  text-align: center;
+}
+
+
+
+/*mobile*/
+@media only screen and (min-width: 640px) {
+
+  body {
+  padding: 20px;
+  width: 800px;
+  line-height: 3.5em;
+  }
+
+
+  h1, li {
+    font-size: 45px;
+  }
+
+  .externallinks li {
+    list-style: none;
+    font-weight: 400;
+    padding: 0.5em 0;
+
+  }
+
+  .separator {
+    content: "";
+    border-bottom: 6px solid #6A7EFC;
+    width: 180px;
+    margin: 80px 0;
+  }
+
+  .aboutme p{
+    font-size: 38px;
+  }
+
+  input {
+    margin-top: 50px;
+    height: 140px;
+    width: 100%;
+    border: 5px solid #FF5656;
+    color: #FF5656;
+    background-color: #EDF2F6;
+    border-radius: 100px;
+    font-size: 40px;
+    padding: 0;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+
+    outline: 0; /* hide standard blue highlight */
+  }
+
+  .hint {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+  }
 }
