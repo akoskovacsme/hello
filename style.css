@@ -80,6 +80,7 @@ input {
   font-weight: 400;
   text-decoration: none;
   cursor: pointer;
+  vertical-align: middle;
 
   outline: 0; /* hide standard blue highlight */
 }
