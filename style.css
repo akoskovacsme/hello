@@ -99,8 +99,8 @@ input:hover{
 }
 
 
+/*test
 
-/*mobile*/
 @media only screen and (min-width: 640px) {
 
   body {
@@ -146,7 +146,7 @@ input:hover{
     text-decoration: none;
     cursor: pointer;
 
-    outline: 0; /* hide standard blue highlight */
+    outline: 0;
   }
 
   .hint {
@@ -156,3 +156,4 @@ input:hover{
     text-align: center;
   }
 }
+*/
