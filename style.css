@@ -39,14 +39,14 @@ a {
 }
 
 a:hover{
-  color: #FF5656;
+  color: #26C6D0;
 }
 
 h1 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 20px;
-  color: #6A7EFC;
+  color: #26C6D0;
 }
 
 /*BODY ELEMENTS STYLE*/
@@ -99,6 +99,12 @@ h1 {
 }
 
 /* BREAKPOINTS*/
+  @media screen and (max-width: 1400px) { /* Specific to this particular image */
+    body {
+      background-image: none;
+    }
+
+
 @media screen and (min-width: 320px) { /* Specific to this particular image */
   /*LAYOUT STYLE*/
   body {
@@ -114,7 +120,7 @@ h1 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 60px;
-    color: #6A7EFC;
+     color: #26C6D0
   }
 
   /*BODY ELEMENTS STYLE*/
@@ -160,7 +166,7 @@ h1 {
       text-transform: uppercase;
       font-weight: 700;
       font-size: 30px;
-      color: #6A7EFC;
+
     }
 
     /*BODY ELEMENTS STYLE*/
@@ -211,7 +217,7 @@ h1 {
           text-transform: uppercase;
           font-weight: 700;
           font-size: 30px;
-          color: #6A7EFC;
+
         }
 
         /*BODY ELEMENTS STYLE*/
@@ -248,8 +254,3 @@ h1 {
           display: block;
 
         }
-
-    @media screen and (max-width: 1400px) { /* Specific to this particular image */
-      body {
-        background-image: none;
-      }
