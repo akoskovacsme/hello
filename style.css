@@ -2,11 +2,11 @@
 body {
   font-family: 'Arvo', serif;
   font-weight: 400;
-  max-width: 960px;
   margin: 0 50px;
   color: #494953;
   background-color: #c8c8c8;
-  background-image: url(asset/background.jpg);
+
+  background-image: url(asset/bgfront.jpg);
   background-repeat: no-repeat;
 
   background-size: fixed;
@@ -33,7 +33,6 @@ h1 {
 .title {
   margin-top: 50px;
   margin-bottom: 150px;
-  display: inline-block;;
 }
 
 .title h1{
@@ -43,13 +42,18 @@ h1 {
   -webkit-margin-end: 0px;
 }
 
+.portrait {
+  display: none;
+}
+
 .aboutme {
-  width: 400px;
+  width: 640px;
   margin-bottom: 50px;
 }
 
 .aboutme p{
-  font-size: 13px;
+  font-size: 15px;
+  line-height: 22px;
 }
 
 
@@ -66,7 +70,6 @@ h1 {
 }
 
 .externallinks li {
-  max-width: 960px;
   list-style: none;
   font-weight: 400;
 }
@@ -76,17 +79,154 @@ h1 {
 }
 
 /* BREAKPOINTS*/
-@media screen and (max-width: 800px) { /* Specific to this particular image */
+@media screen and (max-width: 1400px) { /* Specific to this particular image */
   body {
     background-image: none;
   }
 
-
-
-@media screen and (max-width: 640px) { /* Specific to this particular image */
+@media screen and (min-width: 320px) { /* Specific to this particular image */
+  /*LAYOUT STYLE*/
   body {
+    margin: 30px;
     background-image: none;
-    margin: 10px;
+
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 60px;
+    color: #6A7EFC;
+  }
+
+  /*BODY ELEMENTS STYLE*/
+  .title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+
+  .title h1{
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+  }
+
+  .aboutme {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .aboutme h1 {
+    display: none;
+  }
+
+  .aboutme p{
+    font-size: 40px;
+    line-height: 60px;
     text-align: justify;
   }
-}
+
+  .externallinks {
+    font-size: 60px;
+    line-height: 96px;
+  }
+
+  @media screen and (min-width: 1024px) { /* Specific to this particular image */
+    /*LAYOUT STYLE*/
+    body {
+      background-image: none;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 30px;
+      color: #6A7EFC;
+    }
+
+    /*BODY ELEMENTS STYLE*/
+    .title {
+      margin-top: 0px;
+      margin-bottom: 50px;
+    }
+
+    .title h1{
+      -webkit-margin-before: 0em;
+      -webkit-margin-after: 0em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+    }
+
+    .aboutme p{
+      font-size: 20px;
+      line-height: 30px;
+      text-align: left;
+    }
+
+    .externallinks {
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+    .externallinks a {
+      display: -webkit-flex; /* Safari */
+     -webkit-justify-content: space-around; /* Safari 6.1+ */
+     display: flex;
+     justify-content: space-around;
+     float:left;
+     padding-right: 30px;
+    }
+
+      @media screen and (min-width: 1366px) { /* Specific to this particular image */
+        /*LAYOUT STYLE*/
+        body {
+          background-image: url(asset/bgfront.jpg);
+          background-repeat: no-repeat;
+
+          background-size: fixed;
+          background-position: 550px 100px;
+
+        }
+
+        h1 {
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 30px;
+          color: #6A7EFC;
+        }
+
+        /*BODY ELEMENTS STYLE*/
+        .title {
+          margin-top: 0px;
+          margin-bottom: 50px;
+        }
+
+        .title h1{
+          -webkit-margin-before: 0em;
+          -webkit-margin-after: 0em;
+          -webkit-margin-start: 0px;
+          -webkit-margin-end: 0px;
+        }
+
+        .aboutme {
+          margin-bottom: 50px;
+          width: 50%;
+        }
+
+        .aboutme p{
+          font-size: 17px;
+          line-height: 24px;
+          text-align: left;
+        }
+
+        .externallinks {
+          font-size: 30px;
+          line-height: 45px;
+        }
+
+        .externallinks a {
+          float: none;
+          display: block;
+          
+        }
