@@ -99,17 +99,15 @@ h1 {
 }
 
 /* BREAKPOINTS*/
-@media screen and (max-width: 1400px) { /* Specific to this particular image */
-  body {
-    background-image: none;
-  }
-
 @media screen and (min-width: 320px) { /* Specific to this particular image */
   /*LAYOUT STYLE*/
   body {
     margin: 30px;
     background-image: none;
+  }
 
+  .frame {
+    display: none;
   }
 
   h1 {
@@ -250,3 +248,8 @@ h1 {
           display: block;
 
         }
+
+    @media screen and (max-width: 1400px) { /* Specific to this particular image */
+      body {
+        background-image: none;
+      }
