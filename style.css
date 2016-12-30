@@ -1,15 +1,23 @@
+/*LAYOUT STYLE*/
 body {
   font-family: 'Arvo', serif;
   font-weight: 400;
-  width: 600px;
-  margin: 5% auto;
-  background: #EDF2F6;
+  width: 960px;
+  margin: 0 50px;
+  background-image: url(asset/background.jpg);
+  background-position: right bottom; /*Positioning*/
+  background-color: #c8c8c8;
+  background-repeat: no-repeat;
+  background-size: 100%;
   color: #494953;
+  background-position: 50% 50%;
 }
 
+/*
 ::selection {
   background: #FF5656;
-}
+} */
+
 
 a {
   text-decoration: none;
@@ -24,10 +32,14 @@ h1 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 20px;
+  color: #6A7EFC;
 }
 
+/*BODY ELEMENTS STYLE*/
 .title {
-  margin-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  display: inline-block;;
 }
 
 .title h1{
@@ -35,6 +47,15 @@ h1 {
   -webkit-margin-after: 0em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
+}
+
+.aboutme {
+  width: 400px;
+  margin-bottom: 50px;
+}
+
+.aboutme p{
+  font-size: 13px;
 }
 
 .externallinks {
@@ -47,55 +68,16 @@ h1 {
   -webkit-padding-start: 0px;
 }
 
+
+
 .externallinks li {
+  max-width: 960px;
   list-style: none;
   font-weight: 400;
 }
 
 .externallinks a:hover{
   transition: 0.2s;
-}
-
-.separator {
-  content: "";
-  border-bottom: 3px solid #6A7EFC;
-  width: 60px;
-  margin: 20px 0;
-
-}
-
-.aboutme p{
-  font-size: 16px;
-}
-
-input {
-  margin-top: 50px;
-  height: 45px;
-  width: 100%;
-  border: 2px solid #FF5656;
-  color: #FF5656;
-  background-color: #EDF2F6;
-  border-radius: 100px;
-  font-size: 16px;
-  padding: 0;
-  font-weight: 400;
-  text-decoration: none;
-  cursor: pointer;
-
-  outline: 0; /* hide standard blue highlight */
-}
-
-input:hover{
-  background-color: #FF5656;
-  color: #EDF2F6;
-  transition: 0.2s;
-}
-
-.hint {
-  font-weight: 400;
-  font-style: italic;
-  font-size: 9px;
-  text-align: center;
 }
 
 
