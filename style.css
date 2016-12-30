@@ -76,9 +76,17 @@ h1 {
 }
 
 /* BREAKPOINTS*/
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-  img.bg {
-    left: 50%;
-    margin-left: -512px;   /* 50% */
+@media screen and (max-width: 800px) { /* Specific to this particular image */
+  body {
+    background-image: none;
+  }
+
+
+
+@media screen and (max-width: 640px) { /* Specific to this particular image */
+  body {
+    background-image: none;
+    margin: 10px;
+    text-align: justify;
   }
 }
