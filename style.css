@@ -98,28 +98,80 @@ h1 {
   transition: 0.2s;
 }
 
+.updatetime p{
+  margin-top: 100px;
+}
+
+
+
 /* BREAKPOINTS*/
-  @media screen and (max-width: 1400px) { /* Specific to this particular image */
-    body {
-      background-image: none;
-    }
-
-
-@media screen and (min-width: 320px) { /* Specific to this particular image */
-  /*LAYOUT STYLE*/
+@media screen and (max-width: 1400px) { /* Specific to this particular image */
   body {
-    margin: 30px;
     background-image: none;
   }
 
-  .frame {
-    display: none;
+
+@media screen and (min-width: 320px) { /* Specific to this particular image */
+/*LAYOUT STYLE*/
+body {
+  margin: 30px;
+  background-image: none;
+}
+
+.frame {
+  display: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 60px;
+
+}
+
+/*BODY ELEMENTS STYLE*/
+.title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.title h1{
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+.aboutme {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.aboutme h1 {
+  display: none;
+}
+
+.aboutme p{
+  font-size: 40px;
+  line-height: 60px;
+  text-align: justify;
+}
+
+.externallinks {
+  font-size: 60px;
+  line-height: 96px;
+}
+
+@media screen and (min-width: 1024px) { /* Specific to this particular image */
+  /*LAYOUT STYLE*/
+  body {
+    background-image: none;
   }
 
   h1 {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 30px;
 
   }
 
@@ -136,121 +188,75 @@ h1 {
     -webkit-margin-end: 0px;
   }
 
-  .aboutme {
-    margin-bottom: 50px;
-    width: 100%;
-  }
-
-  .aboutme h1 {
-    display: none;
-  }
-
   .aboutme p{
-    font-size: 40px;
-    line-height: 60px;
-    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
   }
 
   .externallinks {
-    font-size: 60px;
-    line-height: 96px;
+    font-size: 30px;
+    line-height: 45px;
   }
 
-  @media screen and (min-width: 1024px) { /* Specific to this particular image */
-    /*LAYOUT STYLE*/
-    body {
-      background-image: none;
-    }
+  .externallinks a {
+    display: -webkit-flex; /* Safari */
+   -webkit-justify-content: space-around; /* Safari 6.1+ */
+   display: flex;
+   justify-content: space-around;
+   float:left;
+   padding-right: 30px;
+  }
 
-    h1 {
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 30px;
+    @media screen and (min-width: 1366px) { /* Specific to this particular image */
+      /*LAYOUT STYLE*/
+      body {
+        background-image: url(asset/bgfront.jpg);
+        background-repeat: no-repeat;
 
-    }
+        background-size: fixed;
+        background-position: 550px 100px;
 
-    /*BODY ELEMENTS STYLE*/
-    .title {
-      margin-top: 0px;
-      margin-bottom: 50px;
-    }
+      }
 
-    .title h1{
-      -webkit-margin-before: 0em;
-      -webkit-margin-after: 0em;
-      -webkit-margin-start: 0px;
-      -webkit-margin-end: 0px;
-    }
+      h1 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 30px;
 
-    .aboutme p{
-      font-size: 20px;
-      line-height: 30px;
-      text-align: left;
-    }
+      }
 
-    .externallinks {
-      font-size: 30px;
-      line-height: 45px;
-    }
+      /*BODY ELEMENTS STYLE*/
+      .title {
+        margin-top: 0px;
+        margin-bottom: 50px;
+      }
 
-    .externallinks a {
-      display: -webkit-flex; /* Safari */
-     -webkit-justify-content: space-around; /* Safari 6.1+ */
-     display: flex;
-     justify-content: space-around;
-     float:left;
-     padding-right: 30px;
-    }
+      .title h1{
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+      }
 
-      @media screen and (min-width: 1366px) { /* Specific to this particular image */
-        /*LAYOUT STYLE*/
-        body {
-          background-image: url(asset/bgfront.jpg);
-          background-repeat: no-repeat;
+      .aboutme {
+        margin-bottom: 50px;
+        width: 50%;
+      }
 
-          background-size: fixed;
-          background-position: 550px 100px;
+      .aboutme p{
+        font-size: 17px;
+        line-height: 24px;
+        text-align: left;
+      }
 
-        }
+      .externallinks {
+        font-size: 30px;
+        line-height: 45px;
+      }
 
-        h1 {
-          text-transform: uppercase;
-          font-weight: 700;
-          font-size: 30px;
+      .externallinks a {
+        float: none;
+        display: block;
 
-        }
-
-        /*BODY ELEMENTS STYLE*/
-        .title {
-          margin-top: 0px;
-          margin-bottom: 50px;
-        }
-
-        .title h1{
-          -webkit-margin-before: 0em;
-          -webkit-margin-after: 0em;
-          -webkit-margin-start: 0px;
-          -webkit-margin-end: 0px;
-        }
-
-        .aboutme {
-          margin-bottom: 50px;
-          width: 50%;
-        }
-
-        .aboutme p{
-          font-size: 17px;
-          line-height: 24px;
-          text-align: left;
-        }
-
-        .externallinks {
-          font-size: 30px;
-          line-height: 45px;
-        }
-
-        .externallinks a {
-          float: none;
-          display: block;
-
-        }
+      }
