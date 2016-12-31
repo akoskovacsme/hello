@@ -98,12 +98,6 @@ h1 {
   transition: 0.2s;
 }
 
-.updatetime p{
-  margin-top: 100px;
-}
-
-
-
 /* BREAKPOINTS*/
 @media screen and (max-width: 1400px) { /* Specific to this particular image */
   body {
