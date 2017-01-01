@@ -5,34 +5,15 @@ body {
   margin: 0 50px;
   color: #494953;
   background-color: #c8c8c8;
-
+  position: relative;
+/*
   background-image: url(asset/bgfront.jpg);
   background-repeat: no-repeat;
 
   background-size: fixed;
   background-position: right top;
-}
-
-/*
-
- #top, #bottom, #left, #right {
-	background: white;
-	position: fixed;
-	}
-	#left, #right {
-		top: 0; bottom: 0;
-		width: 15px;
-		}
-		#left { left: 0; }
-		#right { right: 0; }
-
-	#top, #bottom {
-		left: 0; right: 0;
-		height: 15px;
-		}
-		#top { top: 0; }
-		#bottom { bottom: 0; }
 */
+}
 
 a {
   text-decoration: none;
@@ -40,17 +21,55 @@ a {
 }
 
 a:hover{
-  color: #26C6D0;
+  color: #604FDD;
 }
 
 h1 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 20px;
-  color: #26C6D0;
+  color: #604FDD;
+}
+
+.profile {
+  display: none;
 }
 
 /*BODY ELEMENTS STYLE*/
+
+.front {
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 2000ms;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -100;
+}
+
+.back {
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -200;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100 {
+    opacity: 0;
+  }
+}
+
+
+
 .title {
   margin-top: 50px;
   margin-bottom: 150px;
@@ -68,7 +87,7 @@ h1 {
 }
 
 .aboutme {
-  width: 640px;
+  width: 500px;
   margin-bottom: 50px;
 }
 
