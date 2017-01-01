@@ -2,10 +2,11 @@
 body {
   font-family: 'Arvo', serif;
   font-weight: 400;
-  margin: 0 50px;
+  margin: 50px;
   color: #494953;
   background-color: #c8c8c8;
   position: relative;
+  line-height: 25px;
 }
 
 a {
@@ -22,17 +23,13 @@ h1 {
   font-weight: 700;
   font-size: 20px;
   color: #604FDD;
+  margin-bottom: 20px;
 }
 
 /*BODY ELEMENTS STYLE*/
-
-/*avatar*/
-.avatar {
-  display: none;
-}
-
-/*background image*/
+/*background image & animation*/
 .front {
+  width: 50%;
   animation: pulse 3s infinite ease-in-out;
   opacity: 1;
   position: fixed;
@@ -42,6 +39,7 @@ h1 {
 }
 
 .back {
+  width: 50%;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -56,32 +54,18 @@ h1 {
 
 
 /*text*/
-.title {
-  margin-top: 50px;
-  margin-bottom: 150px;
-}
-
-.title h1{
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-}
-
 .aboutme {
-  width: 500px;
+  width: 50%;
   margin-bottom: 50px;
 }
 
 .aboutme p{
   font-size: 15px;
-  line-height: 28px;
 }
 
 
 /*LINKS PROJECTS AND SOCIALS*/
 .externallinks {
-  height: 100%;
   list-style: none;
   -webkit-padding-top: 10px;
   -webkit-margin-before: 0em;
@@ -92,183 +76,83 @@ h1 {
 }
 
 .externallinks li {
-  list-style: none;
   font-weight: 400;
-  line-height: 28px;
 }
 
 .externallinks a:hover{
   transition: 0.2s;
 }
 
-/* BREAKPOINTS*/
+/* SCREENS*/
 @media (min-width: 320px){
-
-
-  /*background image*/
-  .bg {
-    display: none;
-  }
-
   h1 {
-    font-size: 80px;
-  }
-
-  .title h1{
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+    font-size: 50px;
+    margin-bottom: 50px;
   }
 
   .aboutme {
     width: 100%;
-    margin-bottom: 30px;
   }
 
   .aboutme p{
-    font-size: 40px;
-    line-height: 70px;
-  }
-
-
-  /*LINKS PROJECTS AND SOCIALS*/
-  .externallinks {
-    height: 100%;
-    list-style: none;
-    -webkit-padding-top: 10px;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 0px;
+    font-size: 35px;
+    line-height: 50px;
   }
 
   .externallinks li {
-    list-style: none;
-    font-weight: 400;
+    font-size: 40px;
     line-height: 60px;
-    font-size: 80px;
-    line-height: 120px;
   }
-
 }
 @media(max-width: 375px){
-
+  h1 {
+    font-size: 70px;
+  }
 }
 @media(max-width: 425px){
-
+  .bg {
+    display: none;
+  }
 }
 @media(min-width: 768px){
-  body {
-    font-family: 'Arvo', serif;
-    font-weight: 400;
-    margin: 0 50px;
-    color: #494953;
-    background-color: #c8c8c8;
-    position: relative;
-  }
-
-  a {
-    text-decoration: none;
-    color: #494953;
-  }
-
-  a:hover{
-    color: #604FDD;
-  }
-
   h1 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 20px;
-    color: #604FDD;
-  }
-
-  /*BODY ELEMENTS STYLE*/
-
-  /*avatar*/
-
-
-  /*background image*/
-  .bg {
-    display: block;
-  }
-
-  .front {
-    width: 50%;
-    animation: pulse 3s infinite ease-in-out;
-    opacity: 1;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: -100;
-  }
-
-  .back {
-    width: 50%;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: -200;
-  }
-
-  @keyframes pulse {
-    0% { opacity: 0.2; }
-    50% { opacity: 1; }
-    100% { opacity: 0.2; }
-  }
-
-
-  /*text*/
-  .title {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  .title h1{
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+    font-size: 30px;
+    margin-bottom: 40px;
   }
 
   .aboutme {
-    width: 500px;
-    margin-bottom: 50px;
+    width: 100%;
   }
 
   .aboutme p{
-    font-size: 15px;
-    line-height: 28px;
-  }
-
-  /*LINKS PROJECTS AND SOCIALS*/
-  .externallinks {
-    height: 100%;
-    list-style: none;
-    -webkit-padding-top: 10px;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 0px;
-    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 35px;
   }
 
   .externallinks li {
-    list-style: none;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 38px;
+    font-size: 30px;
+    line-height: 40px;
   }
-
-  .externallinks a:hover{
-    transition: 0.2s;
-  }
-
 }
-@media(max-width: 1024px){
+@media(min-width: 1024px){
+  h1 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .aboutme {
+    width: 50%;
+  }
+
+  .aboutme p{
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .externallinks li {
+    font-size: 14px;
+    line-height: 20px;
+  }
 
 }
 @media(max-width: 1440px){
