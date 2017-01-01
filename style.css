@@ -6,13 +6,6 @@ body {
   color: #494953;
   background-color: #c8c8c8;
   position: relative;
-/*
-  background-image: url(asset/bgfront.jpg);
-  background-repeat: no-repeat;
-
-  background-size: fixed;
-  background-position: right top;
-*/
 }
 
 a {
@@ -31,12 +24,14 @@ h1 {
   color: #604FDD;
 }
 
-.profile {
+/*BODY ELEMENTS STYLE*/
+
+/*avatar*/
+.avatar {
   display: none;
 }
 
-/*BODY ELEMENTS STYLE*/
-
+/*background image*/
 .front {
   animation: pulse 3s infinite ease-in-out;
   opacity: 1;
@@ -47,7 +42,6 @@ h1 {
 }
 
 .back {
-
   position: fixed;
   bottom: 0;
   right: 0;
@@ -55,13 +49,13 @@ h1 {
 }
 
 @keyframes pulse {
-  0% { opacity: 0.1; }
+  0% { opacity: 0.2; }
   50% { opacity: 1; }
-  100% { opacity: 0.1; }
+  100% { opacity: 0.2; }
 }
 
 
-
+/*text*/
 .title {
   margin-top: 50px;
   margin-bottom: 150px;
@@ -74,10 +68,6 @@ h1 {
   -webkit-margin-end: 0px;
 }
 
-.portrait {
-  display: none;
-}
-
 .aboutme {
   width: 500px;
   margin-bottom: 50px;
@@ -85,7 +75,7 @@ h1 {
 
 .aboutme p{
   font-size: 15px;
-  line-height: 22px;
+  line-height: 28px;
 }
 
 
@@ -104,6 +94,7 @@ h1 {
 .externallinks li {
   list-style: none;
   font-weight: 400;
+  line-height: 28px;
 }
 
 .externallinks a:hover{
@@ -111,79 +102,127 @@ h1 {
 }
 
 /* BREAKPOINTS*/
-@media screen and (max-width: 1400px) { /* Specific to this particular image */
-  body {
-    background-image: none;
+@media (min-width: 320px){
+
+
+  /*background image*/
+  .bg {
+    display: none;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  .title h1{
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+  }
+
+  .aboutme {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .aboutme p{
+    font-size: 40px;
+    line-height: 70px;
   }
 
 
-@media screen and (min-width: 320px) { /* Specific to this particular image */
-/*LAYOUT STYLE*/
-body {
-  margin: 30px;
-  background-image: none;
+  /*LINKS PROJECTS AND SOCIALS*/
+  .externallinks {
+    height: 100%;
+    list-style: none;
+    -webkit-padding-top: 10px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+  }
+
+  .externallinks li {
+    list-style: none;
+    font-weight: 400;
+    line-height: 60px;
+    font-size: 80px;
+    line-height: 120px;
+  }
+
 }
-
-.frame {
-  display: none;
-}
-
-h1 {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 60px;
+@media(max-width: 375px){
 
 }
+@media(max-width: 425px){
 
-/*BODY ELEMENTS STYLE*/
-.title {
-  margin-top: 0px;
-  margin-bottom: 50px;
 }
-
-.title h1{
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-}
-
-.aboutme {
-  margin-bottom: 50px;
-  width: 100%;
-}
-
-.aboutme h1 {
-  display: none;
-}
-
-.aboutme p{
-  font-size: 40px;
-  line-height: 60px;
-  text-align: justify;
-}
-
-.externallinks {
-  font-size: 60px;
-  line-height: 96px;
-}
-
-@media screen and (min-width: 1024px) { /* Specific to this particular image */
-  /*LAYOUT STYLE*/
+@media(min-width: 768px){
   body {
-    background-image: none;
+    font-family: 'Arvo', serif;
+    font-weight: 400;
+    margin: 0 50px;
+    color: #494953;
+    background-color: #c8c8c8;
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    color: #494953;
+  }
+
+  a:hover{
+    color: #604FDD;
   }
 
   h1 {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 30px;
-
+    font-size: 20px;
+    color: #604FDD;
   }
 
   /*BODY ELEMENTS STYLE*/
+
+  /*avatar*/
+
+
+  /*background image*/
+  .bg {
+    display: block;
+  }
+
+  .front {
+    width: 50%;
+    animation: pulse 3s infinite ease-in-out;
+    opacity: 1;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -100;
+  }
+
+  .back {
+    width: 50%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -200;
+  }
+
+  @keyframes pulse {
+    0% { opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { opacity: 0.2; }
+  }
+
+
+  /*text*/
   .title {
-    margin-top: 0px;
+    margin-top: 50px;
     margin-bottom: 50px;
   }
 
@@ -194,75 +233,44 @@ h1 {
     -webkit-margin-end: 0px;
   }
 
+  .aboutme {
+    width: 500px;
+    margin-bottom: 50px;
+  }
+
   .aboutme p{
-    font-size: 20px;
-    line-height: 30px;
-    text-align: left;
+    font-size: 15px;
+    line-height: 28px;
   }
 
+  /*LINKS PROJECTS AND SOCIALS*/
   .externallinks {
-    font-size: 30px;
-    line-height: 45px;
+    height: 100%;
+    list-style: none;
+    -webkit-padding-top: 10px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+    margin-bottom: 50px;
   }
 
-  .externallinks a {
-    display: -webkit-flex; /* Safari */
-   -webkit-justify-content: space-around; /* Safari 6.1+ */
-   display: flex;
-   justify-content: space-around;
-   float:left;
-   padding-right: 30px;
+  .externallinks li {
+    list-style: none;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
   }
 
-    @media screen and (min-width: 1366px) { /* Specific to this particular image */
-      /*LAYOUT STYLE*/
-      body {
-        background-image: url(asset/bgfront.jpg);
-        background-repeat: no-repeat;
+  .externallinks a:hover{
+    transition: 0.2s;
+  }
 
-        background-size: fixed;
-        background-position: 550px 100px;
+}
+@media(max-width: 1024px){
 
-      }
+}
+@media(max-width: 1440px){
 
-      h1 {
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 30px;
-
-      }
-
-      /*BODY ELEMENTS STYLE*/
-      .title {
-        margin-top: 0px;
-        margin-bottom: 50px;
-      }
-
-      .title h1{
-        -webkit-margin-before: 0em;
-        -webkit-margin-after: 0em;
-        -webkit-margin-start: 0px;
-        -webkit-margin-end: 0px;
-      }
-
-      .aboutme {
-        margin-bottom: 50px;
-        width: 50%;
-      }
-
-      .aboutme p{
-        font-size: 17px;
-        line-height: 24px;
-        text-align: left;
-      }
-
-      .externallinks {
-        font-size: 30px;
-        line-height: 45px;
-      }
-
-      .externallinks a {
-        float: none;
-        display: block;
-
-      }
+}
