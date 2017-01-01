@@ -38,10 +38,8 @@ h1 {
 /*BODY ELEMENTS STYLE*/
 
 .front {
-  animation-name: pulse;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-duration: 2000ms;
+  animation: pulse 3s infinite ease-in-out;
+  opacity: 1;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -57,15 +55,9 @@ h1 {
 }
 
 @keyframes pulse {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100 {
-    opacity: 0;
-  }
+  0% { opacity: 0.1; }
+  50% { opacity: 1; }
+  100% { opacity: 0.1; }
 }
 
 
