@@ -3,13 +3,12 @@ body {
   font-family: 'Roboto Slab', serif;
   margin: 50px;
   color: #494953;
-  background-color: #c8c8c8;
-  position: relative;
+  background-color: #FCFBFF;
 }
 
 .content{
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 650px;
+  margin: 50px auto;
 }
 
 /*Text*/
@@ -25,7 +24,7 @@ a:hover{
 h1 {
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 28px;
   color: #604FDD;
   margin-bottom: 20px;
   line-height: 40px;
@@ -33,14 +32,39 @@ h1 {
 
 li, p {
   font-weight: 100;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 /*BODY ELEMENTS STYLE*/
 /*background image & animation*/
+
 .bg {
-  display: none;
+  position: relative;
+  margin: 0 auto;
+  width: 180px;
+  height: 180px;
+}
+
+.image {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+}
+
+.front {
+  animation: pulse 3s infinite ease-in-out;
+  opacity: 1;
+}
+
+.back {
+  z-index: -1000;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
 }
 
 
@@ -63,4 +87,19 @@ li, p {
   transition: 0.2s;
 }
 
-/* SCREENS*/
+/*AVATAR*/
+
+
+/* BREAKPOINTS*/
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}
