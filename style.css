@@ -61,8 +61,8 @@ p {
 	position: relative;
 }
 .mailto-message {
-	top: 120px;
-	left: 72%;
+	top: 104px;
+	left: 96%;
 	margin-bottom: -5px;
 	transform: translate(-50%, -100%);
 	position: absolute;
@@ -105,6 +105,30 @@ p {
   .menu h1 {
     font-size: 56px;
   }
+
+  .mailto-message {
+  	top: 120px;
+  	left: 72%;
+  	margin-bottom: -5px;
+  	transform: translate(-50%, -100%);
+  	position: absolute;
+  	display: none;
+  	width: auto;
+  	white-space: nowrap;
+  	font-size: 16px;
+  	background-color:#0A0A0A;;
+  	color: white;
+    padding: 16px;
+  	border-radius: 8px;
+    letter-spacing: 0px;
+    line-height: 16px;
+
+  	&:after {
+  		content: '';
+  	}
+  }
+
+
 }
 
 @media only screen and (min-width: 1024px) {
