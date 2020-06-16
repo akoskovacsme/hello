@@ -59,10 +59,9 @@ p {
 /*mailto-link effect*/
 .mailto-link {
 	position: relative;
-	padding: 8px 0;
 }
 .mailto-message {
-	top: 1px;
+	top: 120px;
 	left: 50%;
 	margin-bottom: -5px;
 	transform: translate(-50%, -100%);
@@ -70,15 +69,20 @@ p {
 	display: none;
 	width: auto;
 	white-space: nowrap;
-	font-size: 12px;
-	background-color: black;
+	font-size: 16px;
+	background-color:#0A0A0A;;
 	color: white;
-	padding: 2px 6px;
-	border-radius: 2px;
+  padding: 16px;
+	border-radius: 8px;
+  letter-spacing: 0px;
+  line-height: 16px;
+
 	&:after {
 		content: '';
 	}
 }
+
+
 .mailto-link:hover .mailto-message,
 .mailto-link:focus .mailto-message,
 .mailto-link:focus-within .mailto-message {
