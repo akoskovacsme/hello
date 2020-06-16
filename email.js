@@ -5,8 +5,8 @@ $(document).ready(function() {
 	$('a[href^=mailto]').addClass('mailto-link');
 
 	var mailto = $('.mailto-link');
-	var messageCopy = 'Click to copy email address';
-	var messageSuccess = 'Email address copied to clipboard';
+	var messageCopy = 'Click to copy';
+	var messageSuccess = 'Copied!';
 
 	mailto.append('<span class="mailto-message"></span>');
 	$('.mailto-message').append(messageCopy);
