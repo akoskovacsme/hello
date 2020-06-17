@@ -5,9 +5,10 @@ body {
   margin: 0 8px;
 }
 
+
 div, .content {
-    font-family: 'Montserrat', sans-serif;
-    color: #0A0A0A;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #0A0A0A;
 }
 
 div  {
@@ -22,7 +23,7 @@ div  {
 
 
 h2 {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 32px;
   line-height: 40px;
 /* identical to box height */
@@ -36,7 +37,7 @@ h2 {
 }
 
 p {
-  font-weight: 500;
+  font-weight: Regular;
   font-size: 16px;
   line-height: 152%;
 /* or 26px */
@@ -48,7 +49,7 @@ p {
 }
 
 .menu h1 {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 48px;
   line-height: 88%;
   margin-block-end: -17px;
