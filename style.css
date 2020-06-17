@@ -2,9 +2,12 @@
 html,
 body {
   background-color: #EFFE00;
-  margin: 0 8px;
+  margin: 0 16px;
 }
 
+body {
+  margin: 8px;
+}
 
 div, .content {
   font-family: 'IBM Plex Mono', monospace;
