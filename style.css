@@ -1,7 +1,7 @@
 /*LAYOUT STYLE*/
 html,
 body {
-  background-color: #EFFE00;
+  background-color: #f1f1f1;
   margin: 0 16px;
 }
 
@@ -11,21 +11,17 @@ body {
 
 div, .content {
   font-family: 'IBM Plex Mono', monospace;
-  color: #0A0A0A;
+  color: #efefef;
 }
 
 div  {
   margin-bottom: 80px;
 }
 
-.menu a {
+.pure-menu, .pure-menu-horizontal a {
   text-decoration: none;
   color: #0A0A0A;
   margin-bottom: 8px;
-}
-
-.newpage {
-  
 }
 
 h2 {
@@ -36,6 +32,7 @@ h2 {
   letter-spacing: 0.2px;
   text-transform: uppercase;
   margin-bottom: 8px;
+  color: #101010;
 
 /* Inside Auto Layout */
   flex: none;
@@ -48,59 +45,38 @@ p {
   line-height: 152%;
 /* or 26px */
   letter-spacing: 1px;
+  color: #101010;
 
 /* Inside Auto Layout */
   flex: none;
   order: 1;
 }
 
-.menu h1 {
+/* Menu Style */
+
+.pure-menu {
+  margin-bottom: 80px;
+}
+
+ul {
+display: block;
+ list-style-type: disc;
+ padding-inline-start: 0px;
+}
+
+.pure-menu li {
   font-weight: 700;
   font-size: 48px;
   line-height: 88%;
+  padding-top: 24px;
   margin-block-end: -17px;
 /* identical to box height */
   text-transform: uppercase;
+  list-style: none;
+
 }
 
-/*mailto-link effect*/
-.mailto-link {
-	position: relative;
-}
-.mailto-message {
-	top: 104px;
-	left: 56%;
-	margin-bottom: -5px;
-	transform: translate(-50%, -100%);
-	position: absolute;
-	display: none;
-	width: auto;
-	white-space: nowrap;
-	font-size: 16px;
-	background-color:#0A0A0A;;
-	color: white;
-  padding: 16px;
-	border-radius: 8px;
-  letter-spacing: 0px;
-  line-height: 16px;
-
-	&:after {
-		content: '';
-	}
-}
-
-
-.mailto-link:hover .mailto-message,
-.mailto-link:focus .mailto-message,
-.mailto-link:focus-within .mailto-message {
-	display: block;
-}
-
-
-
-
-
-/*media query settings*/
+/* Media Query Settings */
 @media only screen and (min-width: 568px) {
   .content {
     width: 90%;
@@ -109,39 +85,15 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .menu h1 {
+  .pure-menu h1 {
     font-size: 56px;
   }
-
-  .mailto-message {
-  	top: 120px;
-  	left: 72%;
-  	margin-bottom: -5px;
-  	transform: translate(-50%, -100%);
-  	position: absolute;
-  	display: none;
-  	width: auto;
-  	white-space: nowrap;
-  	font-size: 16px;
-  	background-color:#0A0A0A;;
-  	color: white;
-    padding: 16px;
-  	border-radius: 8px;
-    letter-spacing: 0px;
-    line-height: 16px;
-
-  	&:after {
-  		content: '';
-  	}
-  }
-
-
 }
 
 @media only screen and (min-width: 1024px) {
 
 
-.menu h1 {
+.pure-menu li {
   font-size: 64px;
 /*text animation*/
   letter-spacing: 0;
@@ -152,7 +104,7 @@ p {
   cursor: pointer
 }
 
-h1:hover {
+li:hover {
   letter-spacing: 4px;
   }
 }
